@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "b-automobile",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

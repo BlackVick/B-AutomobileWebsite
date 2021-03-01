@@ -1,0 +1,729 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+/**theme #E80111
+
+/*   GENERAL   */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Kaushan Script', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/*   BANNER   */
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.05), #E80111), url("images/banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#banner .logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+#banner .banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+
+}
+
+#banner .banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#banner .banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#banner .banner-btn{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 160px;
+}
+
+#banner .banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .7px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+#banner .banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+#banner .banner-btn a:hover span{
+    width: 100%;
+}
+
+#banner .banner-btn a:hover {
+    color: #E80111;
+}
+
+
+
+
+/*   NAV   */
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #E80111;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+#sideNav nav ul{
+    margin-top: 100px;
+}
+
+#sideNav nav ul li{
+    list-style: none;
+    margin: 50px 50px;
+}
+
+#sideNav nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#menuBtn i{
+    font-size: 25px;
+    color: #fff;
+    background: #E80111;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 3;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+/*   FEATURE   */
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+
+#feature .title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#feature .title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #E80111;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+#feature .title-text p::after{
+    content: '';
+    width: 55px;
+    height: 35px;
+    background: linear-gradient(#E80111, #fff);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+#feature .title-text h1{
+    margin: auto;
+    font-size: 50px;
+}
+
+#feature .feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+#feature .feature-box .features{
+    flex-basis: 50%;
+}
+
+#feature .feature-box .features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+#feature .feature-box .features-img img{
+    width: 60%;
+    border-radius: 20px;
+}
+
+#feature .feature-box .features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #E80111;
+}
+
+#feature .feature-box .features .features-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#feature .feature-box .features .features-desc .feature-icon .fas{ 
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #E80111;
+    border: 1px solid #E80111;
+}
+
+#feature .feature-box .features .features-desc .feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+
+
+
+
+
+/*   SERVICES   */
+#services{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+#services .title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#services .title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #E80111;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+#services .title-text p::after{
+    content: '';
+    width: 55px;
+    height: 35px;
+    background: linear-gradient(#E80111, #fff);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+#services .title-text h1{
+    margin: auto;
+    font-size: 50px;
+}
+
+#services .service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#services .service-box .single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+#services .service-box .single-service img{
+    width: 100%;
+    max-height: 420px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#services .service-box .single-service .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #E80111);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+#services .service-box .single-service:hover .overlay{
+    opacity: 1;
+}
+
+#services .service-box .single-service .service-desc{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+#services .service-box .single-service .service-desc h3{
+    font-size: 23px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#services .service-box .single-service .service-desc hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+#services .service-box .single-service .service-desc p{
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#services .service-box .single-service:hover .service-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+
+
+
+
+
+
+/*   SERVICES   */
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+}
+
+#testimonial .title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#testimonial .title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #E80111;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+#testimonial .title-text p::after{
+    content: '';
+    width: 55px;
+    height: 35px;
+    background: linear-gradient(#E80111, #fff);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+#testimonial .title-text h1{
+    margin: auto;
+    font-size: 50px;
+}
+
+#testimonial .testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#testimonial .testimonial-row .testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px 15px #E8011114;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#testimonial .testimonial-row .testimonial-col:hover{
+    transform: translateY(10px);
+}
+
+#testimonial .testimonial-row .testimonial-col p{
+    font-size: 16px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#testimonial .user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#testimonial .user img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#testimonial .user .user-info h4, small{
+    font-family: 'Baloo 2', cursive;
+}
+
+#testimonial .user .user-info .fab{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+
+#testimonial .user .user-info small{
+    color: #E80111;
+}
+
+
+
+
+
+/*   FOOTER   */
+#footer{
+    width: 100%;
+    padding: 100px 0 30px;
+    background: #efefef;
+    position: relative;
+}
+
+#footer .title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#footer .title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #E80111;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+#footer .title-text p::after{
+    content: '';
+    width: 55px;
+    height: 35px;
+    background: linear-gradient(#E80111, #fff);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+#footer .title-text h1{
+    margin: auto;
+    font-size: 50px;
+}
+
+#footer .footer-row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer .footer-row .footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#footer .footer-row .footer-right{
+    text-align: right;
+}
+
+#footer .footer-row h1{
+    margin: 10px 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+#footer .footer-row p{
+    line-height: 35px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#footer .footer-left .far, .footer-right .fas, .footer-right .far{
+    color: #E80111;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#footer .footer-img{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#footer .social-links{
+    text-align: center;
+}
+
+#footer .social-links .fas, .social-links .fab{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #E80111;
+    border: 1px solid #E80111;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin: 40px 5px 0;
+}
+
+#footer .social-links .fas:hover, .social-links .fab:hover{
+    background: #E80111;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#footer .social-links p{
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#footer .social-links p a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Baloo 2', cursive;
+    color: #E80111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   SCREEN SIZES   */
+@media (max-width: 900px){
+
+    /*   banner   */
+    #banner .banner-text h1{
+        font-size: 120px;
+    }
+
+}
+
+@media (max-width: 760px){
+
+    /*   banner   */
+    #banner .banner-text h1{
+        font-size: 100px;
+    }
+
+    /*   features   */
+    #feature .title-text h1{
+        font-size: 30px;
+    }
+
+    #feature .feature-box .features{
+        flex-basis: 100%;
+    }
+
+    #feature .feature-box .features-img{
+        flex-basis: 100%;
+    }
+
+    #feature .feature-box .features-img img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /*   services   */
+    #services .title-text h1{
+        font-size: 30px;
+    }
+
+    #services .service-box .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    #services .service-box .single-service .service-desc h3{
+        font-size: 18px;
+    }
+    
+    #services .service-box .single-service .service-desc p{
+        font-size: 13px;
+    }
+    
+    #services .service-box .single-service .service-desc hr{
+        margin: 5px auto;
+    }
+
+    #services .service-box .single-service:hover .service-desc{
+        bottom: 25% !important;
+    }
+
+    /*   testimonial   */
+    #testimonial .title-text h1{
+        font-size: 30px;
+    }
+
+    #testimonial .testimonial-row .testimonial-col{
+        flex-basis: 100%;
+    }
+
+    /*   footer   */
+    #footer .title-text h1{
+        font-size: 30px;
+    }
+
+    #footer .footer-row .footer-left, .footer-right{
+        flex-basis: 100%;
+    }
+
+    #footer .footer-img{
+        top: 25%;
+    }
+
+}
+
+@media (max-width: 640px){
+
+    /*   banner   */
+    #banner .banner-text h1{
+        font-size: 80px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    /*   banner   */
+    #banner .logo{
+        width: 100px;
+        top: 2%;
+        left: 20px;
+    }
+
+    #banner .banner-text{
+        padding-top: 220px;
+    
+    }
+
+    #banner .banner-text h1{
+        font-size: 60px;
+    }
+
+    #banner .banner-btn a{
+        margin-top: 20px;
+    }
+    
+    /*   menu   */
+    #menuBtn i{
+        right: 20px;
+        top: 2%;
+    }
+}
